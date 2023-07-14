@@ -1,12 +1,14 @@
-import React from 'react';
 import './App.css';
+import { NavBar } from './layouts/NavbarAndFooter/Navbar';
+import { Footer } from './layouts/NavbarAndFooter/Footer';
+import { HomePage } from './layouts/HomePage/HomePage';
 
-function App() {
+export const App = () => {
   return (
-    <div className="App">
-      <h1>Wellcome to the reviewsach</h1>
+    <div>
+      <NavBar/>
+      <HomePage/>
+      <Footer/>
     </div>
   );
 }
-
-export default App;
