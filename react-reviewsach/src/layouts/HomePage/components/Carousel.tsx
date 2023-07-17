@@ -10,7 +10,7 @@ export const Carousel = () => {
     const [httpError, setHttpError] = useState(null);
 
     useEffect(() =>{
-        const fetchBook = async () =>{
+        const fetchBooks = async () =>{
             const baseUrl:string ="http://localhost:8080/api/books";
 
             const url:string = `${baseUrl}?page=0&size=9`;
@@ -43,7 +43,7 @@ export const Carousel = () => {
                 setIsLoading(false);
             }
         };
-        fetchBook().catch((error:any) => {
+        fetchBooks().catch((error:any) => {
             setIsLoading(false);
             setHttpError(error.message);
         })
