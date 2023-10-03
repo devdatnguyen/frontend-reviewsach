@@ -116,7 +116,7 @@ export const BookCheckoutPage = () => {
     useEffect(() => {
         const fetchUserCurrentLoansCount = async () => {
             if(authState && authState.isAuthenticated){
-                const url = `http://localhost:8080/api/books/secure/currentLoans/count`;
+                const url = `http://localhost:8080/api/books/secure/currentloans/count`;
                 const requestOptions = {
                     method: "GET",
                     headers: {
